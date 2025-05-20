@@ -1,0 +1,146 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Стилі для заголовків */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Шапка сайту */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header img.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Навігація */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1f1f1;
+}
+
+/* Основний контент */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #ff7e5f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Галерея */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td {
+    padding: 15px;
+}
+
+table img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+table img:hover {
+    transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+    
+    nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    table td {
+        padding: 10px;
+    }
+    
+    table img {
+        width: 90%;
+    }
+}
+
